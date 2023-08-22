@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PARTE FLEX */
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  background: #222;
+  color: white;
+  height: 80px;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-title img {
+  width: 30px;
+  height: 30px;
+}
+
+.lista {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.lista>li {
+  transition: all 300ms;
+}
+
+.lista>li:hover {
+  transition: all 300ms;
+  transform: scale(1.2);
+}
+
+.lista>li>a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.lista>li>a:hover {
+  color: rgb(36, 165, 240);
+}
+
+main {
+  margin-bottom: 110px;
+}
+
+.contenedorAgendas {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorAgendas h2 {
+  font-size: 2rem;
+  color: #444;
+}
+
+.contenedorTarjetasDeAgendas {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  border: 1px solid rgb(211, 211, 211);
+  box-shadow: 0px 0px 4px 4px rgb(243 243 243);
+  transition: all 300ms;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card:hover {
+  transition: all 300ms;
+  transform: scale(1.02);
+}
+
+.card>img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.card>p {
+  color: #222;
+  padding: 0px 20px;
+  text-align: justify;
+}
+
+.cardContainer a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid rgb(133, 133, 133);
+  color: white;
+  background-color: #222;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+}
+
+footer>div {
+  padding: 30px 0px;
+}
+
+.footerContacto,
+.footerEnlaces,
+.footerRedes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerRedesEnlaces {
+  flex-direction: row;
+}
+
+.footerContacto h3,
+.footerEnlaces h3,
+.footerRedes h3 {
+  margin-bottom: 10px;
+}
+
+.footerEnlaces a {
+  text-decoration: none;
+  color: white;
+}
+
+.buttonFloat {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+
+/* PARTE GRID */
+
+.fondo {
+  width: 80%;
+  margin: auto;
+  height: auto;
+  padding: 1%;
+  display: grid;
+  grid-template-areas: "item1 item2 item3 item4"
+    "item5 item6 item7 item8"
+    "item9 item10 item11 item12";
+}
+
+.item {
+  min-height: 200px;
+  min-width: 200px;
+  background-color: white;
+  border: 10px solid white;
+  transition: 0.7s;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+
+.item1 {
+  background-image: url(../images/darthVader.JPG);
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.item2 {
+  background-image: url(../images/theOffice.JPG);
+  background-size: cover;
+}
+
+.item3 {
+  background-image: url(../images/Alice.JPG);
+  background-size: cover;
+}
+
+.item4 {
+  background-image: url(../images/leia.JPG);
+  background-size: cover;
+}
+
+.item5 {
+  background-image: url(../images/ouatih.JPG);
+  background-size: cover;
+}
+
+.item6 {
+  background-image: url(../images/potter2.JPG);
+  background-size: cover;
+}
+
+.item7 {
+  background-image: url(../images/pupFictionHairs.JPG);
+  background-size: cover;
+}
+
+.item8 {
+  background-image: url(../images/theMask.JPG);
+  background-size: cover;
+}
+
+.item9 {
+  background-image: url(../images/django.JPG);
+  background-size: cover;
+}
+
+.item10 {
+  background-image: url(../images/leia.JPG);
+  background-size: cover;
+
+}
+
+.item11 {
+  background-image: url(../images/it.JPG);
+  background-size: cover;
+
+}
+
+.item12 {
+  background-image: url(../images/theGodfather.jpeg);
+  background-size: cover;
+}
+
+
+/*SECCION DE FORMULARIO CON TRANSICIONES-ANIMACION*/
+form h2 {
+  text-transform: uppercase;
+  font-family: cursive;
+}
+
+input {
+  transition: all 0.7s;
+}
+
+input:focus {
+  font-size: 20px;
+}
+
